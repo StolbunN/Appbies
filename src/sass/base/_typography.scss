@@ -1,0 +1,64 @@
+@font-face {
+    font-family: "Lato";
+    src: url("../font/Lato-Light.eot") format("eot"),
+    url("../font/Lato-Light.ttf") format("truetype"),
+    url("../font/Lato-Light.woff") format("woff"),
+    url("../font/Lato-Light.woff2") format("woff2");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Lato";
+    src: url("../font/Lato-Regular.eot") format("eot"),
+    url("../font/Lato-Regular.ttf") format("truetype"),
+    url("../font/Lato-Regular.woff") format("woff"),
+    url("../font/Lato-Regular.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Lato";
+    src: url("../font/Lato-Italic.eot") format("eot"),
+    url("../font/Lato-Italic.ttf") format("truetype"),
+    url("../font/Lato-Italic.woff") format("woff"),
+    url("../font/Lato-Italic.woff2") format("woff2");
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Lato";
+    src: url("../font/Lato-Bold.eot") format("eot"),
+    url("../font/Lato-Bold.ttf") format("truetype"),
+    url("../font/Lato-Bold.woff") format("woff"),
+    url("../font/Lato-Bold.woff2") format("woff2");
+    font-weight: 700;
+    font-style: normal;
+}
+
+.title-1 {
+    font-weight: 300;
+    font-size: 4.7rem;
+    line-height: 1.2;
+}
+
+.title-2 {
+    font-family: Lato;
+    font-size: 4.7rem;
+    line-height: 1.2;
+    font-weight: 300;
+    color: #fff8f6;
+    &_gray{
+        color: #343434;
+    }
+}
+
+.subtitle{
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 400;
+    letter-spacing: 0.025em;
+    color: #fff8f6;
+}

@@ -1,0 +1,33 @@
+.footer {
+    padding: 4.6rem 0 4.1rem 0;
+    &__container {
+        text-align: center;
+    }
+    &__logo {
+        margin-bottom: 4.8rem;
+    }
+    &__social-network {
+        margin: 0 1rem 5.4rem 0;
+
+    }
+    &__copyright {
+        font-size: 15px;
+        line-height: 30px;
+        font-weight: 400;
+        color: #2c2c2c;
+    }
+}
+
+.social-network {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    &__img {
+        &:not(:last-child) {
+            margin-right: 6.5rem;
+            @include respond("min-phone"){
+                margin-right: 3rem;
+            }
+        }
+    }
+}

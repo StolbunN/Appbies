@@ -1,0 +1,73 @@
+*,
+*::before,
+*::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    @include respond("tab-port"){
+        font-size: 54%;
+    }
+    @include respond("horiz-tel"){
+        font-size: 50%;
+    }
+}
+
+body{
+    height: 100%;
+    font-size: 1.6rem;
+    color: #fff;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+a{
+    text-decoration: none;
+}
+
+ol,
+ul,
+li{
+    list-style: none;
+}
+
+.wrapper{
+    min-height: 100%;
+    overflow: hidden;
+}
+
+
+._container{
+    max-width: 120rem;
+    padding: 0 1.5rem;
+    margin: 0 auto;
+}
+
+._ibg{
+    position: relative;
+    & img{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+._lock {
+    overflow: hidden;
+}

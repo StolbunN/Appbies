@@ -33,11 +33,11 @@ const scss = () => {
       .pipe(autoprefixer())
       .pipe(shorthand())
       .pipe(groupCssMediaQueries())
-      .pipe(size({title: "main.css"}))
+      .pipe(size({title: "style.css"}))
       .pipe(dest(path.scss.dest, {sourcemaps: app.isDev}))
       .pipe(rename({suffix: ".min"}))
       .pipe(csso())
-      .pipe(size({title: "main.min.css"}))
+      .pipe(size({title: "style.min.css"}))
       .pipe(dest(path.scss.dest, {sourcemaps: app.isDev}));
 }
 

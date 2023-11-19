@@ -1,0 +1,52 @@
+.hamburger {
+    display: none;
+    @include respond("horiz-tel") {
+        display: block;
+        position: fixed;
+        z-index: 20;
+        width: 30px;
+        height: 24px;
+        right: 10px;
+        top: 26px;
+        cursor: pointer;
+        & span,
+        &::before,
+        &::after{
+            left: 0;
+            position: absolute;
+            width: 100%;
+            height: 10%;
+            background-color: #bdbdbd;;
+            transition: all .3s;
+        }
+        &::before,
+        &::after{
+            content: "";
+        }
+        &::before {
+            top: 0;
+        }
+        &::after {
+            bottom: 0;
+        }
+        & span{
+            top: 50%;
+            transform: scale(1) translate(0, -50%);
+        }
+        &.active span{
+            transform: scale(0) translate(0, -50%);
+        }
+    }
+    &.active::before,
+    &.active::after {
+        background-color: black;
+    }
+    &.active::before{
+        top: 50%;
+        transform: rotate(-45deg) translate(0, -50%);
+    }
+    &.active::after{
+        top: 50%;
+        transform: rotate(45deg) translate(0, -50%);
+    }
+}

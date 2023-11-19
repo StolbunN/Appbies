@@ -28,6 +28,8 @@ const img = () => {
       .pipe(src(path.img.src))
       .pipe(newer(path.img.dest))
       .pipe(gulpif(app.isProd, imagemin(app.imagemin)))
+      .pipe(dest(path.img.dest))
+      .pipe(src(path.svg.src))
       .pipe(dest(path.img.dest));
 }
 

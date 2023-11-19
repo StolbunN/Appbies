@@ -1,0 +1,140 @@
+.updates {
+    padding: 14rem 0 8.3rem 0;
+    &__container {
+    }
+    
+    &__title {
+        text-align: center;
+        margin-bottom: 7.5rem;
+    }
+    
+    &__row {
+        display: flex;
+        align-items: center;
+        margin-bottom: 7.5rem;
+        @include respond("tab-port"){
+            flex-direction: column;
+        }
+    }
+    &__column {
+        flex: 0 1 50%;
+        &:not(:last-child){
+            margin-right: 3rem;
+            @include respond("tab-port"){
+                margin: 0 0 3rem 0;
+            }
+        }
+    }
+    &__downloads {
+        display: flex;
+        justify-content: space-between;
+        @include respond("min-phone"){
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+    }
+    &__form {
+        padding-left: 3.7rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        @include respond("phone"){
+            flex-direction: column;
+        }
+    }
+    &__btn {
+        background-color: #ffffff;
+        border: 2px solid #5d5d5d;
+        color: #505050;
+        min-width: 100px;
+        @include respond("phone"){
+            width: 100%;
+        }
+    }
+    &__img {
+        text-align: center;
+        & img{
+            max-width: 100%;
+        }
+        @include respond("min-phone"){
+            display: none;
+        }
+    }
+}
+
+.download {
+    width: 16.7rem;
+    height: 16.7rem;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    &:not(:last-child){
+        margin-right: 2rem;
+        @include respond("min-phone"){
+            margin-right: 1rem;
+        }
+    }
+    @include respond("min-phone"){
+        margin: 1rem 1rem;
+    }
+    &__android {
+        background-color: #a5c63b;
+    }
+    &__img {
+        margin-bottom: 1.3rem;
+    }
+    &__text {
+        text-align: center;
+        font-size: 1.8rem;
+        line-height: 1.2;
+        font-weight: 700;
+        & span{
+            font-weight: 700;
+        }
+    }
+    &__apple {
+        background-color: #009ddc;
+    }
+    &__windows {
+        background-color: #f8682c;
+    }
+}
+
+.email-update{
+    width: 100%;
+    margin-right: 3.7rem;
+    @include respond("phone"){
+        margin-right: 0;
+    }
+    &__label {
+        font-size: 18px;
+        line-height: 30px;
+        font-weight: 400;
+        font-style: italic;
+        letter-spacing: 0.05em;
+        color: #1b1b1b;
+        margin-bottom: 2.8rem;
+        display: block;
+    }
+    &__input{
+        padding: 1.6rem 0;
+        display: block;
+        width: 100%;
+        border: none;
+        border-bottom: 1px solid #8b8b8b;
+        @include respond("phone"){
+            margin-bottom: 2rem;
+        }
+        &::placeholder{
+            font-size: 1.5rem;
+            line-height: 30px;
+            font-weight: 400;
+            letter-spacing: 0.05em;
+            color: #8b8b8b;
+        }
+    }
+}
+
+

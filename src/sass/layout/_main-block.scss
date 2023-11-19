@@ -1,0 +1,73 @@
+.main-block {
+    position: relative;
+    padding: 14rem 0 0 0;
+    @include respond("horiz-tel") {
+        padding: 8rem 0 24rem 0;
+    }
+    &__container {
+        position: relative;
+        z-index: 2;
+        display: flex;
+        column-gap: 30px;
+        @include respond("horiz-tel") {
+            display: block;
+        }
+    }
+    &__column {
+        flex: 0 1 50%;
+        text-align: center;
+        &:last-child {
+            @include respond("horiz-tel") {
+                display: none;
+            }
+        }
+    }
+    &__body {
+        padding: 12.9rem 0 0 0;
+        max-width: 51.6rem;
+        @include respond("horiz-tel") {
+            padding: 4.9rem 0 0 0;
+            max-width: 100%;
+        }
+    }
+    &__title {
+        margin-bottom: 5.6rem;
+        & span{
+            font-weight: 700;
+        }
+        @include respond("horiz-tel") {
+            margin-bottom: 3rem;
+        }
+    }
+    &__text {
+        letter-spacing: 0.05em;
+        color: #ffffff;
+        margin-bottom: 7.6rem;
+        @include respond("horiz-tel") {
+            margin-bottom: 3rem;
+        }
+    }
+    &__button{
+        font-size: 2rem;
+        line-height: 1.2;
+        font-weight: 300;
+        color: inherit;
+        display: inline-block;
+        padding: 2rem 7.6rem;
+        border: 2px solid #fff;
+    }
+    &__img-phones {
+        & img {
+            @include respond("horiz-tel") {
+                width: 90%;
+            }
+        }
+    }
+    &__img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+    }
+}
